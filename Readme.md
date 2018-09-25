@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Константин Козлов](https://up.htmlacademy.ru/adaptive/15/user/483123).
-* Наставник: `Неизвестно`.
+* Наставник: [Кирилл Швец](https://up.htmlacademy.ru/adaptive/15/user/889347).
 
 ---
 
