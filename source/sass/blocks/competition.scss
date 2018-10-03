@@ -1,0 +1,56 @@
+.competition__header {
+  padding: 46px 20px 20px 20px;
+}
+
+.competition__title {
+  font-size: 14px;
+  line-height: 30px;
+}
+
+.competition__form {
+  padding: 0 20px;
+}
+
+.competition__item {
+  padding: 34px 0 42px 0;
+
+  &:nth-child(even) {
+    padding-top: 40px;
+    background-color: #f2f2f2;
+  }
+}
+
+.competition__text {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.competition__fieldset {
+  padding: 0;
+  border: none;
+}
+
+.competition__legend {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.competition__checkbox {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.competition__radio {
+  font-size: 18px;
+  line-height: 30px;
+}
+
+.competition__star {
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
