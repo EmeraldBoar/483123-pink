@@ -1,5 +1,8 @@
 .contacts {
+  width: 320px;
+  margin: 0 auto;
   padding: 45px 20px 20px 20px;
+  text-align: center;
 }
 
 .contacts__header {
@@ -59,4 +62,42 @@
 
 .contacts__content--tel {
   text-decoration: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    width: 660px;
+  }
+
+  .contacts__header-text {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .contacts__item {
+    flex-basis: 300px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contacts {
+    width: auto;
+    margin: 0;
+  }
+
+  .contacts__header-text {
+    font-size: 50px;
+    line-height: 60px;
+  }
+
+  .contacts__list {
+    width: 960px;
+    margin: 0 auto;
+  }
 }
