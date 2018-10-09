@@ -1,4 +1,6 @@
 .download {
+  //Временно для сетки
+  min-height: 271px;
   padding: 28px 20px 32px 20px;
   text-align: center;
   background-color: #1d2631;
@@ -25,11 +27,8 @@
 
 @media (min-width: $tablet-width) {
   .download {
-    width: 320px;
+    width: 300px;
     padding: 0;
-    padding-left: 20px;
-    min-height: 351px;
-    margin-top: -351px;
     background-color: transparent;
   }
 
@@ -50,7 +49,6 @@
 @media (min-width: $desktop-width) {
   .download {
     min-height: 404px;
-    margin-top: -404px;
   }
 
   .download__button {
