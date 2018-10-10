@@ -1,5 +1,8 @@
 .page-footer {
+  width: 320px;
+  margin: 0 auto;
   padding: 40px 20px;
+  text-align: center;
 }
 
 .page-footer-index {
@@ -30,7 +33,6 @@
 
   .page-footer {
     width: 660px;
-    margin: 0 auto;
   }
 
   .page-footer__container {
@@ -43,10 +45,12 @@
   .page-footer {
     width: auto;
     margin: 0;
+    padding: 0;
   }
 
   .page-footer__container {
     width: 960px;
     margin: 0 auto;
+    padding: 0 10px;
   }
 }
