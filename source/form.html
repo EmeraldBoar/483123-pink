@@ -36,7 +36,7 @@
         <p class="competition__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
       </header>
       <form  class="competition__form" action="https://echo.htmlacademy.ru">
-        <div class="competition__item">
+        <div class="competition__item competition__item--name">
           <p class="competition__row">
             <label class="competition__text" for="surname">Фамилия:</label>
             <input class="competition__field" id="surname" type="text" name="surname" placeholder="Укажите фамилию *">
@@ -79,17 +79,20 @@
             </label>
           </fieldset>
         </div>
-        <div class="competition__item">
-          <p class="competition__row">
-            <label class="competition__text" for="number">Номер телефона</label>
-            <input class="competition__field" id="number" type="text" name="number" placeholder="Номер, пожалуйста">
-          </p>
-          <p class="competition__row">
-            <label class="competition__text" for="email">Адрес почты</label>
-            <input class="competition__field" id="email" type="text" name="email" placeholder="Введите почту *">
-          </p>
+        <div class="competition__item competition__item--contact">
+          <fieldset class="competition__fieldset competition__fieldset-contact">
+            <legend class="competition__legend competition__legend-contact">Контактная информация</legend>
+            <p class="competition__row-contact">
+              <label class="competition__text-contact" for="number">Номер телефона</label>
+              <input class="competition__field-contact" id="number" type="text" name="number" placeholder="Номер, пожалуйста">
+            </p>
+            <p class="competition__row-contact">
+              <label class="competition__text-contact" for="email">Адрес почты</label>
+              <input class="competition__field-contact" id="email" type="text" name="email" placeholder="Введите почту *">
+            </p>
+          </fieldset>
         </div>
-        <div class="competition__item">
+        <div class="competition__item competition__item--app">
           <fieldset class="competition__fieldset">
             <legend class="competition__legend">С каким приложением путешествовали?</legend>
             <label class="competition__radio">

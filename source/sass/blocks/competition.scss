@@ -22,7 +22,8 @@
   }
 }
 
-.competition__row {
+.competition__row,
+.competition__row-contact {
   margin: 0;
   margin-bottom: 19px;
 
@@ -31,7 +32,8 @@
   }
 }
 
-.competition__text {
+.competition__text,
+.competition__text-contact {
   display: block;
   padding: 0 23px 0 23px;
   font-size: 14px;
@@ -40,7 +42,8 @@
   text-transform: uppercase;
 }
 
-.competition__field {
+.competition__field,
+.competition__field-contact {
   width: 100%;
   height: 63px;
   padding: 0 23px;
@@ -49,11 +52,15 @@
 
 .competition__fieldset {
   padding: 0;
+  padding-top: 40px;
   border: none;
 }
 
+.competition__legend-contact {
+  display: none;
+}
+
 .competition__legend {
-  margin-bottom: 35px;
   font-size: 14px;
   line-height: 18px;
   color: #d22856;
@@ -117,7 +124,15 @@
   }
 
   .competition__form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
     padding: 0 20px;
+  }
+
+  .competition__title {
+    font-size: 18px;
+    line-height: 30px;
   }
 
   .competition__item {
@@ -129,13 +144,84 @@
     }
   }
 
+  .competition__item--name {
+    order: -3;
+  }
+
+  .competition__item--app {
+    order: -2;
+  }
+
+  .competition__item--contact {
+    order: -1;
+  }
+
   .competition__fieldset {
-    border: auto;
+    margin: 0;
+    padding: 50px 25px;
+    border: 2px solid #e5e5e5;
+  }
+
+  .competition__legend {
+    &::after,
+    &::before {
+      content: "";
+      display: inline-block;
+      width: 32px;
+    }
+  }
+
+  .competition__legend-contact {
+    display: block;
+  }
+
+  .competition__text {
+    display: inline;
+    padding: 0;
+  }
+
+  .competition__row-contact {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .competition__field {
+    width: 526px;
+    margin-left: 13px;
+  }
+
+  .competition__field-contact {
+    width: 500px;
+    margin: 0;
+    margin-bottom: 12px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .competition {
     width: 960px;
+  }
+
+  .competition__form {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .competition__item {
+    width: 100%;
+
+    &:nth-child(even) {
+      padding-top: 0;
+    }
+  }
+
+  .competition__item--name,
+  .competition__item--app {
+    width: 437px;
+    padding-top: 0;
+  }
+
+  .competition__field {
+    width: 336px;
   }
 }
