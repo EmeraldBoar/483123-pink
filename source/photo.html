@@ -35,11 +35,11 @@
       <header class="photo__header">
         <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
       </header>
-      <div class="photo__panorama">
-        <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" alt="" width="320" height="137">
-      </div>
       <div class="photo__wrapper">
         <div class="photo__item">
+          <div class="photo__panorama">
+            <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" alt="" width="320" height="137">
+          </div>
           <blockquote class="photo__comment">
             <cite class="photo__author-name">Анна</cite>
             <span class="photo__timeleft">(5 минут назад)</span>
@@ -109,6 +109,7 @@
         <p class="place__title">Затмите их всех<br>Выкладывайте все, что накопилось в телефоне!</p>
       </header>
       <div class="place__filters">
+        <div class="place__container">
           <div class="place__image-wrapper">
             <img src="img/photo-road-mobile@1x.jpg" alt="" class="place__image" width="280" height="374">
           </div>
@@ -123,9 +124,10 @@
                 <span class="place__toggle"></span>
               </div>
             </div>
-          <div class="place__buttons">
-            <button class="place__button button place__button--post" type="button">Запостить</button>
-            <button class="place__button button place__button--cancel" type="button">Отмена</button>
+            <div class="place__buttons">
+              <button class="place__button button place__button--post" type="button">Запостить</button>
+              <button class="place__button button place__button--cancel" type="button">Отмена</button>
+            </div>
           </div>
         </div>
       </div>

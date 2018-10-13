@@ -25,8 +25,16 @@
   }
 }
 
+.photo__panorama {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+}
+
 .photo__panorama-image {
   display: block;
+  width: 100%;
 }
 
 .photo__comment {
@@ -83,10 +91,6 @@
   .photo__title {
     font-size: 18px;
     line-height: 30px;
-  }
-
-  .photo__panorama-image {
-    width: 100%;
   }
 
   .photo__item {
