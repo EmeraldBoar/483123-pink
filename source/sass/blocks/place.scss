@@ -1,11 +1,11 @@
 .place__header {
-  width: 320px;
-  margin: 0 auto;
-  padding: 41px 20px;
+  padding-top: 41px;
+  padding-bottom: 41px;
   text-align: center;
 }
 
 .place__title {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
 }
@@ -41,10 +41,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .place__header {
-    width: 660px;
-  }
-
   .place__title {
     font-size: 18px;
     line-height: 30px;
@@ -72,10 +68,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .place__header {
-    width: 960px;
-  }
-
   .place__wrapper {
     width: 410px;
   }

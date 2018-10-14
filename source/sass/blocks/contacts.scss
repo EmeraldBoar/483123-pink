@@ -1,7 +1,6 @@
 .contacts {
-  width: 320px;
-  margin: 0 auto;
-  padding: 45px 20px 20px 20px;
+  padding-top: 45px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -65,10 +64,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .contacts {
-    width: 660px;
-  }
-
   .contacts__header-text {
     font-size: 40px;
     line-height: 48px;
@@ -86,18 +81,8 @@
 }
 
 @media (min-width: $desktop-width) {
-  .contacts {
-    width: auto;
-    margin: 0;
-  }
-
   .contacts__header-text {
     font-size: 50px;
     line-height: 60px;
-  }
-
-  .contacts__list {
-    width: 960px;
-    margin: 0 auto;
   }
 }

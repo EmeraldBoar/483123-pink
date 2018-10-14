@@ -1,9 +1,11 @@
 .competition__header {
-  padding: 46px 20px 20px 20px;
+  padding-top: 46px;
+  padding-bottom: 20px;
   text-align: center;
 }
 
 .competition__title {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
 }
@@ -11,11 +13,10 @@
 .competition__container {
   width: 320px;
   margin: 0 auto;
+  padding: 34px 20px 42px 20px;
 }
 
 .competition__item {
-  padding: 34px 20px 42px 20px;
-
   &:nth-child(even) {
     padding-top: 40px;
     background-color: #f2f2f2;
@@ -136,6 +137,7 @@
   .competition__container {
     width: auto;
     margin: 0;
+    padding: 0;
   }
 
   .competition__item {
