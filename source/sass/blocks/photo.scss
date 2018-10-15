@@ -1,5 +1,7 @@
 .photo__header {
-  padding: 46px 20px;
+  padding-top: 46px;
+  padding-bottom: 46px;
+  text-align: center;
 }
 
 .photo__title {
@@ -9,18 +11,27 @@
 
 .photo__item {
   margin-bottom: 20px;
-  padding: 0 20px;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.photo__panorama {
+  position: relative;
+  left: 50%;
+  width: 100vw;
+  margin-left: -50vw;
+}
+
 .photo__panorama-image {
   display: block;
+  width: 100%;
+  height: auto;
 }
 
 .photo__comment {
+  min-height: 155px;
   margin: 0;
   padding: 20px;
   background-color: #f2f2f2;
@@ -57,4 +68,34 @@
   line-height: 24px;
   text-transform: uppercase;
   color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    overflow-x: hidden;
+  }
+
+  .photo__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .photo__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .photo__item {
+    width: 300px;
+  }
+
+  .photo__item--large {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .photo__image {
+    width: 100%;
+  }
 }

@@ -1,9 +1,14 @@
 .rates {
-  padding: 92px 10px 47px 10px;
   background-color: #f2f2f2;
 }
 
+.rates__wrapper {
+  padding: 92px 0 47px 0;
+  overflow-x: hidden;
+}
+
 .rates__table {
+  width: 100%;
   margin-bottom: 40px;
   border-collapse: collapse;
 }
@@ -34,5 +39,41 @@
   border-left: 2px solid #e5e5e5;
   border-right: 2px solid #e5e5e5;
   border-bottom: 2px solid #e5e5e5;
+  font-size: 14px;
+  line-height: 30px;
+  text-transform: uppercase;
   background-color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .rates__name {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .rates__title {
+    text-transform: none;
+  }
+
+  .rates__price {
+    font-size: 18px;
+    line-height: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .rates__name {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .rates__price {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .rates__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
 }

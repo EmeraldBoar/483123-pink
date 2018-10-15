@@ -1,24 +1,27 @@
 .place__header {
-  padding: 41px 20px;
+  padding-top: 41px;
+  padding-bottom: 41px;
+  text-align: center;
 }
 
 .place__title {
+  margin: 0;
   font-size: 14px;
   line-height: 30px;
 }
 
 .place__filters {
-  padding-top: 20px;
   background-color: #f2f2f2;
 }
 
-.place__wrapper {
-  border-bottom: 1px solid #dddfe0;
+.place__container {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .place__image-wrapper {
-  margin-bottom: 42px;
   padding: 0 20px;
+  margin-bottom: 42px;
 }
 
 .place__image {
@@ -30,8 +33,53 @@
   margin-bottom: 33px;
   padding: 0 20px;
   list-style: none;
+  border-bottom: 1px solid #dddfe0;
 }
 
 .place__buttons {
   padding: 41px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .place__title {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .place__image-wrapper {
+    width: 300px;
+    padding: 0;
+  }
+
+  .place__container {
+    display: flex;
+    justify-content: space-between;
+    width: 660px;
+    padding: 57px 20px 54px 20px;
+  }
+
+  .place__wrapper {
+    width: 300px;
+  }
+
+  .place__list {
+    border: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .place__wrapper {
+    width: 410px;
+  }
+
+  .place__filters {
+    width: 960px;
+    margin: 0 auto;
+    padding: 57px 42px 57px 58px;
+  }
+
+  .place__container {
+    width: auto;
+    margin: 0;
+  }
 }

@@ -1,15 +1,20 @@
+.advantages {
+  text-align: center;
+}
+
 .advantages__header {
-  padding: 43px 20px 28px 20px;
+  padding-top: 43px;
+  padding-bottom: 28px;
 }
 
 .advantages__header-text {
+  margin-bottom: 11px;
   font-size: 24px;
   line-height: 29px;
   font-weight: 300;
 }
 
 .advantages__wrapper {
-  padding: 85px 20px 291px 20px;
   background-color: #f2f2f2;
   background-image: url("../img/iphone-screen-mobile@1x.png");
   background-repeat: no-repeat;
@@ -17,8 +22,9 @@
 }
 
 .advantages__list {
-  margin: 0;
-  padding: 0;
+  padding-top: 85px;
+  padding-left: 0;
+  padding-bottom: 290px;
   list-style: none;
 }
 
@@ -38,4 +44,125 @@
   margin: 0;
   font-size: 14px;
   line-height: 24px;
+}
+
+.advantages__effect {
+  display: none;
+}
+
+.advantages__effect-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.advantages__effect-text {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.advantages__effect-link {
+  font-size: 14px;
+  line-height: 24px;
+  color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__header {
+    min-height: 246px;
+  }
+
+  .advantages__header-text {
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+    font-weight: 300;
+  }
+
+  .advantages__wrapper {
+    height: 482px;
+    background-image: url("../img/iphone-screen-3-tablet@1x.png");
+    background-position: 20px 112%;
+  }
+
+  .advantages__list {
+    margin: 0;
+    padding-left: 330px;
+    padding-bottom: 0;
+    text-align: left;
+  }
+
+  .advantages__effect {
+    display: block;
+    //Временно для сетки
+    height: 390px;
+  }
+
+  .advantages__effect-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 660px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+
+  .advantages__effect-wrapper {
+    flex-basis: 308px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__header {
+    min-height: 324px;
+  }
+
+  .advantages__header-text {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 300;
+  }
+
+  .advantages__title {
+    margin-bottom: 27px;
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .advantages__text {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .advantages__wrapper {
+    display: flex;
+    align-items: flex-end;
+    //Временно для сетки
+    min-height: 628px;
+    padding: 0;
+    background-image: none;
+  }
+
+  .advantages__list {
+    display: flex;
+    justify-content: space-between;
+    width: 960px;
+    padding-top: 0;
+    padding-bottom: 69px;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .advantages__item {
+    flex-basis: 271px;
+    margin-bottom: 0;
+  }
+
+  .advantages__effect-container {
+    width: 960px;
+  }
+
+  .advantages__effect {
+    background-color: #f2f2f2;
+  }
 }

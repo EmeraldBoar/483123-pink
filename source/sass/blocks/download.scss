@@ -1,5 +1,8 @@
 .download {
+  //Временно для сетки
+  min-height: 271px;
   padding: 28px 20px 32px 20px;
+  text-align: center;
   background-color: #1d2631;
 }
 
@@ -20,4 +23,39 @@
   line-height: 24px;
   font-weight: 300;
   color: #ffffff;
+}
+
+@media (min-width: $tablet-width) {
+  .download {
+    width: 300px;
+    padding: 0;
+    background-color: transparent;
+  }
+
+  .download__text {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .download__button {
+    margin-bottom: 32px;
+  }
+
+  .download__list {
+    margin-bottom: 39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download {
+    min-height: 404px;
+  }
+
+  .download__button {
+    margin-bottom: 67px;
+  }
+
+  .download__list {
+    margin-bottom: 56px;
+  }
 }
