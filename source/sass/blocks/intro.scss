@@ -7,12 +7,11 @@
   background-repeat: no-repeat;
 }
 
-.intro__container {
+.intro__wrapper {
   display: flex;
   align-items: flex-end;
   min-height: 733px;
-  width: 320px;
-  margin: 0 auto;
+  padding: 0;
 }
 
 .intro__text {
@@ -32,10 +31,9 @@
     background-position: bottom, center;
   }
 
-  .intro__container {
+  .intro__wrapper {
     display: block;
-    width: 660px;
-    padding: 208px 20px 0 20px;
+    padding-top: 208px;
   }
 
   .intro__text {
@@ -54,11 +52,5 @@
       url("../img/bg-back-desktop@1x.jpg");
     background-position: bottom, center;
     background-size: auto, cover;
-  }
-
-  .intro__container {
-    width: 960px;
-    padding: 0 10px;
-    padding-top: 208px;
   }
 }

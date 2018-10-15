@@ -88,11 +88,11 @@
 
   .photo__item {
     width: 300px;
+  }
 
-    &:first-child {
-      width: 100%;
-      margin-bottom: 50px;
-    }
+  .photo__item--large {
+    width: 100%;
+    margin-bottom: 50px;
   }
 
   .photo__image {

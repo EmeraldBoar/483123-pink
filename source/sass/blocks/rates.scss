@@ -2,9 +2,7 @@
   background-color: #f2f2f2;
 }
 
-.rates__container {
-  width: 320px;
-  margin: 0 auto;
+.rates__wrapper {
   padding: 92px 0 47px 0;
   overflow-x: hidden;
 }
@@ -48,10 +46,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .rates__container {
-    width: 660px;
-  }
-
   .rates__name {
     font-size: 16px;
     line-height: 30px;
@@ -68,15 +62,6 @@
 }
 
 @media (min-width: $desktop-width) {
-  .rates {
-    width: auto;
-    margin: 0;
-  }
-
-  .rates__container {
-    width: 960px;
-  }
-
   .rates__name {
     font-size: 18px;
     line-height: 30px;
