@@ -43,10 +43,6 @@
   display: block;
 }
 
-.photo__author {
-  margin-bottom: 4px;
-}
-
 .photo__author-name {
   font-style: normal;
   font-size: 14px;
@@ -165,5 +161,9 @@
 
   .photo__title {
     padding: 0 150px;
+  }
+
+  .photo__wrapper {
+    padding: 0;
   }
 }
