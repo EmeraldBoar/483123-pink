@@ -32,7 +32,7 @@
   width: 280px;
 }
 
-.rates__col:first-child {
+.rates__col--large {
   display: none;
 }
 
@@ -50,7 +50,7 @@
   text-align: center;
 }
 
-.rates__header--hit::before {
+.rates__header-hit {
   position: absolute;
   content: "";
   top: 0;
@@ -61,11 +61,11 @@
   background-repeat: no-repeat;
 }
 
-.rates__header--hit::after {
+.rates__header-hit-text {
   position: absolute;
   top: 11px;
   left: 11px;
-  content: "Хит";
+  content: "";
   text-transform: uppercase;
   font-size: 14px;
   line-height: 30px;
@@ -117,7 +117,7 @@
 
 @media (min-width: $tablet-width) {
   .rates {
-    height: 380px;
+    height: 377px;
     padding-top: 90px;
   }
 
@@ -129,26 +129,28 @@
     width: 155px;
   }
 
-  .rates__col:first-child {
-    display: block;
+  .rates__col--large {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
   }
 
   .rates__header {
     min-height: 79px;
   }
 
-  .rates__header--hit::before {
+  .rates__header-hit {
     background-image: url("../img/bg-hit-tablet.svg");
+  }
+
+  .rates__header-hit-text {
+    top: 5px;
+    left: 6px;
   }
 
   .rates__header--hit::after {
     top: 4px;
     left: 6px;
-  }
-
-  .rates__header--large {
-    border-right: none;
-    background: none;
   }
 
   .rates__title {
