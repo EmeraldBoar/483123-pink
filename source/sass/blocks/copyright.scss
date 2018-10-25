@@ -1,0 +1,43 @@
+.copyright__text {
+  display: block;
+  margin-right: 14px;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.copyright__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+}
+
+.copyright__link .copyright__text:hover + svg {
+  fill: rgba(0, 0, 0, 1);
+}
+
+.copyright__link .copyright__text:active + svg {
+  fill: rgba(0, 0, 0, 0.3);
+}
+
+.copyright__link svg {
+  width: 27px;
+  height: 34px;
+  fill: #d22856;
+
+  &:hover,
+  &:focus {
+    fill: rgba(0, 0, 0, 1);
+  }
+
+  &:active {
+    fill: rgba(0, 0, 0, 0.3);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+    line-height: 18px;
+  }
+}

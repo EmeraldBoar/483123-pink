@@ -1,12 +1,16 @@
 .page-caption {
-  min-height: 237px;
-  padding-top: 99px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -69px;
+  min-height: 239px;
+  padding-top: 50px;
   padding-bottom: 33px;
   text-align: center;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-position: center;
   background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .page-caption__text {
@@ -19,13 +23,15 @@
 
 @media (min-width: $tablet-width) {
   .page-caption {
-    //Временно для сетки
-    height: 440px;
+    min-height: 438px;
+    margin-top: -109px;
+    padding-top: 68px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: bottom, center;
+    background-position: center top;
   }
 
   .page-caption__text {
+    padding: 0 20px;
     font-size: 50px;
     line-height: 60px;
   }
@@ -33,14 +39,14 @@
 
 @media (min-width: $desktop-width) {
   .page-caption {
-    //Временно для сетки
-    height: 394px;
+    min-height: 393px;
+    padding-top: 104px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: bottom, center;
+    background-position: center top;
   }
 
   .page-caption__text {
-    padding: 0 30px;
+    padding: 0 141px;
     font-size: 50px;
     line-height: 60px;
   }

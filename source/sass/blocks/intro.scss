@@ -1,9 +1,9 @@
 .intro {
-  min-height: 733px;
+  min-height: 735px;
+  margin-top: -69px;
   background-color: #283645;
-  background-image: url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-position: center 175px, center 0;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-position: center 0;
   background-repeat: no-repeat;
 }
 
@@ -12,6 +12,9 @@
   align-items: flex-end;
   min-height: 733px;
   padding: 0;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: left 176px;
+  background-repeat: no-repeat;
 }
 
 .intro__text {
@@ -25,22 +28,26 @@
 
 @media (min-width: $tablet-width) {
   .intro {
-    min-height: 729px;
-    background-image: url("../img/iphone-hand-tablet@1x.png"),
-      url("../img/bg-back-tablet@1x.jpg");
+    min-height: 728px;
+    margin-top: -110px;
+    background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: bottom, center;
   }
 
   .intro__wrapper {
     display: block;
-    padding-top: 208px;
+    min-height: inherit;
+    padding-top: 202px;
+    padding-left: 18px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: bottom center;
   }
 
   .intro__text {
     display: block;
     width: 300px;
     padding: 0 58px;
-    margin-bottom: 36px;
+    margin-bottom: 30px;
     text-align: center;
   }
 }
@@ -48,9 +55,22 @@
 @media (min-width: $desktop-width) {
   .intro {
     min-height: 853px;
-    background-image: url("../img/iphone-hand-desktop@1x.png"),
-      url("../img/bg-back-desktop@1x.jpg");
-    background-position: bottom, center;
-    background-size: auto, cover;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center;
+    background-size: cover;
+  }
+
+  .intro__wrapper {
+    padding-top: 217px;
+    padding-left: 0;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: -15% bottom;
+  }
+
+  .intro__text {
+    margin-bottom: 52px;
+    padding: 0 30px;
+    font-size: 50px;
+    line-height: 60px;
   }
 }
