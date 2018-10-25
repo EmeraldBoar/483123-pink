@@ -44,14 +44,14 @@
           <p class="photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         </header>
         <div class="photo__wrapper">
-          <div class="photo__item photo__item--large">
+          <article class="photo__item photo__item--large">
             <div class="photo__panorama">
               <div class="photo__panorama-day">
                 <span>Панорама дня</span>
               </div>
               <img class="photo__panorama-image" src="img/panorama-mobile@1x.jpg" alt="" width="320" height="137">
             </div>
-            <blockquote class="photo__comment photo__comment--large">
+            <div class="photo__comment photo__comment--large">
               <div class="photo__author">
                 <cite class="photo__author-name">Анна</cite>
                 <span class="photo__timeleft">(5 минут назад)</span>
@@ -67,11 +67,13 @@
                 </span>
                 <span class="photo__like">Нравится: 215</span>
               </div>
-            </blockquote>
-          </div>
-          <div class="photo__item">
+            </div>
+          </article>
+          <article class="photo__item">
+            <a class="photo__image-link" href="img/photo-car-mobile@1x.jpg">
             <img class="photo__image" src="img/photo-car-mobile@1x.jpg" alt="" width="280" height="180">
-            <blockquote class="photo__comment">
+            </a>
+            <div class="photo__comment">
               <div class="photo__author">
                 <cite class="photo__author-name">Левон</cite>
                 <span class="photo__timeleft">(5 часов назад)</span>
@@ -87,11 +89,13 @@
                 </span>
                 <span class="photo__like">Нравится: 356</span>
               </div>
-            </blockquote>
-          </div>
-          <div class="photo__item">
-            <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
-            <blockquote class="photo__comment">
+            </div>
+          </article>
+          <article class="photo__item">
+            <a class="photo__image-link" href="img/photo-drumset-mobile@1x.jpg">
+              <img class="photo__image" src="img/photo-drumset-mobile@1x.jpg" alt="" width="280" height="180">
+            </a>
+            <div class="photo__comment">
               <div class="photo__author">
                 <cite class="photo__author-name">Антон</cite>
                 <span class="photo__timeleft">(12 часов назад)</span>
@@ -107,11 +111,13 @@
                 </span>
                 <span class="photo__like">Нравится: 666</span>
               </div>
-            </blockquote>
-          </div>
-          <div class="photo__item">
-            <img class="photo__image" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
-            <blockquote class="photo__comment">
+            </div>
+          </article>
+          <article class="photo__item">
+            <a class="photo__image-link" href="img/photo-window-mobile@1x.jpg">
+              <img class="photo__image" src="img/photo-window-mobile@1x.jpg" alt="" width="280" height="180">
+            </a>
+            <div class="photo__comment">
               <div class="photo__author">
                 <cite class="photo__author-name">Борис</cite>
                 <span class="photo__timeleft">(20 часов назад)</span>
@@ -127,11 +133,13 @@
                 </span>
                 <span class="photo__like">Нравится: 215</span>
               </div>
-            </blockquote>
-          </div>
-          <div class="photo__item">
-            <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" alt="" width="280" height="180">
-            <blockquote class="photo__comment">
+            </div>
+          </article>
+          <article class="photo__item">
+            <a class="photo__image-link" href="img/photo-fair-mobile@1x.jpg">
+              <img class="photo__image" src="img/photo-fair-mobile@1x.jpg" alt="" width="280" height="180">
+            </a>
+            <div class="photo__comment">
               <div class="photo__author">
                 <cite class="photo__author-name">Сергей</cite>
                 <span class="photo__timeleft">(25 часов назад)</span>
@@ -147,11 +155,13 @@
                 </span>
                 <span class="photo__like">Нравится: 4</span>
               </div>
-            </blockquote>
-          </div>
-          <div class="photo__item">
-            <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
-            <blockquote class="photo__comment">
+            </div>
+          </article>
+          <article class="photo__item">
+              <a class="photo__image-link" href="img/photo-pov-mobile@1x.jpg">
+              <img class="photo__image" src="img/photo-pov-mobile@1x.jpg" alt="" width="280" height="180">
+            </a>
+            <div class="photo__comment">
               <div class="photo__author">
                 <cite class="photo__author-name">Максим</cite>
                 <span class="photo__timeleft">(40 часов назад)</span>
@@ -167,11 +177,13 @@
                 </span>
                 <span class="photo__like">Нравится: 150</span>
               </div>
-            </blockquote>
-          </div>
-          <div class="photo__item">
-            <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
-            <blockquote class="photo__comment">
+            </div>
+          </article>
+          <article class="photo__item">
+            <a class="photo__image-link" href="img/photo-wing-mobile@1x.jpg">
+              <img class="photo__image" src="img/photo-wing-mobile@1x.jpg" alt="" width="280" height="180">
+            </a>
+            <div class="photo__comment">
               <div class="photo__author">
                 <cite class="photo__author-name">Надежда</cite>
                 <span class="photo__timeleft">(45 часов назад)</span>
@@ -187,8 +199,8 @@
                 </span>
                 <span class="photo__like">Нравится: 2560</span>
               </div>
-            </blockquote>
-          </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
@@ -297,9 +309,8 @@
         </li>
       </ul>
       <div class="page-footer__copyright copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="https://up.htmlacademy.ru/adaptive/15" class="copyright__link">
-          <span class="visually-hidden">Html Academy</span>
+        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">
+          <span class="copyright__text">Разработано</span>
           <svg xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 26.943 34.09"><path d="M13.62.017L13.472 0 0 1.412v24.66l13.472 8.018 13.43-7.99.042-.026V1.412L13.62.017zm11.4 12.11L13.494 5.334V5.23l-.088.05-.088-.056v.11L1.924 12.117v-8.97l11.547-1.213L25.02 3.147v8.98zm-11.615-5.34L24.923 13.5l-4.48 2.64-7.092-4.22-.012 1.414 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.032-1.787-.012 1.413 1.852 1.092-1.8 1.08-11.356-6.75 11.37-6.835zm-11.48 8.34l11.41 6.79.016 1.045-7.94-4.728-.015 1.416 7.98 4.796.016 1.076-7.97-4.74-.014 1.414 8.02 4.82.046.027 8.143-4.872v-1.267l-.01-.148v-3.76l3.414-2.037v10.02L13.47 31.85 1.925 24.98v-9.853z"/></svg>
         </a>
       </div>
