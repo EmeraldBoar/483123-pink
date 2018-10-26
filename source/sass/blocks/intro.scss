@@ -5,6 +5,12 @@
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-position: center 0;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
 }
 
 .intro__wrapper {
@@ -15,6 +21,12 @@
   background-image: url("../img/iphone-hand-mobile@1x.png");
   background-position: left 176px;
   background-repeat: no-repeat;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/iphone-hand-mobile@2x.png");
+    background-size: 258px auto;
+  }
 }
 
 .intro__text {
@@ -32,6 +44,12 @@
     margin-top: -110px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: bottom, center;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .intro__wrapper {
@@ -41,6 +59,12 @@
     padding-left: 18px;
     background-image: url("../img/iphone-hand-tablet@1x.png");
     background-position: bottom center;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-tablet@2x.png");
+      background-size: 700px auto;
+    }
   }
 
   .intro__text {
@@ -58,6 +82,11 @@
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center;
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
   }
 
   .intro__wrapper {
@@ -65,6 +94,12 @@
     padding-left: 0;
     background-image: url("../img/iphone-hand-desktop@1x.png");
     background-position: -15% bottom;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/iphone-hand-desktop@2x.png");
+      background-size: 1050px auto;
+    }
   }
 
   .intro__text {

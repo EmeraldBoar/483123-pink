@@ -57,6 +57,7 @@
 
 .photo__image {
   display: block;
+  width: 100%;
 }
 
 .photo__author-name {
@@ -186,8 +187,6 @@
   .photo__image {
     width: 100%;
     flex-shrink: 0;
-    //Временно
-    height: 300px;
   }
 }
 
@@ -219,7 +218,5 @@
 
   .photo__image {
     width: 100%;
-    //Временно
-    height: 400px;
   }
 }
