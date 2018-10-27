@@ -67,7 +67,6 @@
     border-color: #283645;
   }
 
-  &:active,
   &:focus {
     border-color: #d22856;
   }
@@ -150,11 +149,12 @@
   background-repeat: no-repeat;
 }
 
-.competition__input:hover + .competition__checkbox::before {
+.competition__input:hover + .competition__checkbox::before,
+.competition__input:focus + .competition__checkbox::before {
   border-color: #283645;
 }
 
-.competition__input:focus + .competition__checkbox::before {
+.competition__input:active + .competition__checkbox::before {
   border-color: #d22856;
 }
 
@@ -185,11 +185,12 @@
   border-radius: 50%;
 }
 
-.competition__input:hover + .competition__radio::before {
+.competition__input:hover + .competition__radio::before,
+.competition__input:focus + .competition__radio::before {
   border-color: #283645;
 }
 
-.competition__input:focus + .competition__radio::before {
+.competition__input:active + .competition__radio::before {
   border-color: #d22856;
 }
 
