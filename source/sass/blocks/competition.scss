@@ -61,6 +61,16 @@
   height: 63px;
   padding: 0 23px;
   border: 2px solid #e5e5e5;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .competition__fieldset {
@@ -140,6 +150,14 @@
   background-repeat: no-repeat;
 }
 
+.competition__input:hover + .competition__checkbox::before {
+  border-color: #283645;
+}
+
+.competition__input:focus + .competition__checkbox::before {
+  border-color: #d22856;
+}
+
 .competition__radio {
   display: block;
   position: relative;
@@ -165,6 +183,14 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+}
+
+.competition__input:hover + .competition__radio::before {
+  border-color: #283645;
+}
+
+.competition__input:focus + .competition__radio::before {
+  border-color: #d22856;
 }
 
 .competition__input:checked + .competition__radio::after {
@@ -372,9 +398,9 @@
       content: "";
       position: absolute;
       top: 2px;
-      right: 0;
+      right: 2px;
       width: 60px;
-      height: 60px;
+      height: 59px;
       background-color: #e5e5e5;
       background-repeat: no-repeat;
       background-position: center;
