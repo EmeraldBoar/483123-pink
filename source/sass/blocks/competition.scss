@@ -20,6 +20,10 @@
   padding: 0 20px;
 }
 
+.competition__button-wrapper {
+  margin-bottom: 12px;
+}
+
 .competition__item {
   margin-bottom: 43px;
 
@@ -57,6 +61,15 @@
   height: 63px;
   padding: 0 23px;
   border: 2px solid #e5e5e5;
+  outline: none;
+
+  &:hover {
+    border-color: #283645;
+  }
+
+  &:focus {
+    border-color: #d22856;
+  }
 }
 
 .competition__fieldset {
@@ -136,6 +149,15 @@
   background-repeat: no-repeat;
 }
 
+.competition__input:hover + .competition__checkbox::before,
+.competition__input:focus + .competition__checkbox::before {
+  border-color: #283645;
+}
+
+.competition__input:active + .competition__checkbox::before {
+  border-color: #d22856;
+}
+
 .competition__radio {
   display: block;
   position: relative;
@@ -161,6 +183,15 @@
   background-color: #ffffff;
   border: 2px solid #e5e5e5;
   border-radius: 50%;
+}
+
+.competition__input:hover + .competition__radio::before,
+.competition__input:focus + .competition__radio::before {
+  border-color: #283645;
+}
+
+.competition__input:active + .competition__radio::before {
+  border-color: #d22856;
 }
 
 .competition__input:checked + .competition__radio::after {
@@ -368,9 +399,9 @@
       content: "";
       position: absolute;
       top: 2px;
-      right: 0;
+      right: 2px;
       width: 60px;
-      height: 60px;
+      height: 59px;
       background-color: #e5e5e5;
       background-repeat: no-repeat;
       background-position: center;
@@ -410,6 +441,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 55px;
   }
 
   .compitition__button {
@@ -525,6 +557,7 @@
 
   .competition__button-wrapper {
     width: 100%;
+    margin-bottom: 0;
   }
 
   .competition__textarea {

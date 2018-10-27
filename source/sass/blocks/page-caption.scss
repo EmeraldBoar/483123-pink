@@ -1,16 +1,19 @@
 .page-caption {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-top: -69px;
   min-height: 239px;
-  padding-top: 50px;
+  padding-top: 98px;
   padding-bottom: 33px;
   text-align: center;
   background-color: #283645;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: top center;
+
+  @media (min-resolution: $retina-dpi),
+    (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+    background-size: 700px auto;
+  }
 }
 
 .page-caption__text {
@@ -24,10 +27,16 @@
 @media (min-width: $tablet-width) {
   .page-caption {
     min-height: 438px;
-    margin-top: -109px;
-    padding-top: 68px;
+    margin-top: -110px;
+    padding-top: 179px;
     background-image: url("../img/bg-back-tablet@1x.jpg");
     background-position: center top;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-tablet@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 
   .page-caption__text {
@@ -40,13 +49,19 @@
 @media (min-width: $desktop-width) {
   .page-caption {
     min-height: 393px;
-    padding-top: 104px;
+    padding-top: 173px;
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-position: center top;
+
+    @media (min-resolution: $retina-dpi),
+      (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+      background-size: cover;
+    }
   }
 
   .page-caption__text {
-    padding: 0 141px;
+    padding: 0 95px;
     font-size: 50px;
     line-height: 60px;
   }

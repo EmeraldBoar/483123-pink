@@ -1,7 +1,7 @@
 .rates {
   position: relative;
   height: 470px;
-  padding-top: 90px;
+  padding-top: 92px;
   background-color: #f2f2f2;
 }
 
@@ -37,12 +37,9 @@
 }
 
 .rates__header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
   position: relative;
   min-height: 98px;
+  padding-top: 17px;
   color: #ffffff;
   background-color: #283645;
   border-right: 2px solid #e5e5e5;
@@ -98,9 +95,8 @@
 .rates__item {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   min-height: 60px;
-  padding: 0 20px 0 24px;
+  padding: 16px 20px 0 24px;
   border-bottom: 2px solid #e5e5e5;
   background-color: #ffffff;
 }
@@ -137,6 +133,7 @@
 
   .rates__header {
     min-height: 79px;
+    padding-top: 11px;
   }
 
   .rates__header-hit {
@@ -168,7 +165,7 @@
   .rates__item {
     justify-content: center;
     min-height: 46px;
-    padding: 0 10px 0 17px;
+    padding: 6px 10px 0 17px;
   }
 
   .rates__item--large {
@@ -205,6 +202,7 @@
 
   .rates__header {
     min-height: 98px;
+    padding-top: 17px;
   }
 
   .rates__header--hit::before {
@@ -226,6 +224,7 @@
 
   .rates__item {
     min-height: 60px;
+    padding-top: 16px;
   }
 
   .rates__option {

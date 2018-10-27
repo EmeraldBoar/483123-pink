@@ -1,5 +1,5 @@
 .page-footer {
-  padding-top: 54px;
+  padding-top: 43px;
   padding-bottom: 40px;
   text-align: center;
 }
@@ -11,6 +11,47 @@
 .page-footer__logo-link {
   display: block;
   margin-bottom: 34px;
+}
+
+.page-footer__logo__image {
+  width: 147px;
+  height: 40px;
+  fill: #283645;
+}
+
+.page-footer__logo-link[href]:hover .page-footer__logo__image,
+.page-footer__logo-link[href]:focus .page-footer__logo__image {
+  fill: #d22856;
+}
+
+.page-footer__logo-link[href]:active .page-footer__logo-image-pink {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.page-footer__logo-link[href]:active .page-footer__logo-image-glass,
+.page-footer__logo-link[href]:active .page-footer__logo-image-inner {
+  fill: rgba(210, 40, 86, 0.3);
+}
+
+.page-footer__logo-link[href]:active .page-footer__logo-image-star,
+.page-footer__logo-link[href]:active .page-footer__logo-image-stars {
+  fill: rgba(210, 40, 86, 0.3);
+}
+
+.page-footer__logo-image-glass {
+  fill: #d22856;
+}
+
+.page-footer__logo-image-inner {
+  display: none;
+}
+
+.page-footer__logo-image-stars {
+  display: none;
+}
+
+.page-footer__logo-image-star {
+  display: none;
 }
 
 .page-footer__list {
@@ -66,7 +107,7 @@
 
 @media (min-width: $tablet-width) {
   .page-footer {
-    padding-top: 86px;
+    padding-top: 36px;
   }
 
   .page-footer-index {
@@ -99,11 +140,29 @@
 
 @media (min-width: $desktop-width) {
   .page-footer {
-    padding-top: 68px;
+    padding-top: 74px;
   }
 
   .page-footer__wrapper {
     padding: 0;
+  }
+
+  .page-footer__logo-image-glass {
+    display: none;
+  }
+
+  .page-footer__logo-image-inner {
+    display: block;
+    fill: #d22856;
+  }
+
+  .page-footer__logo-image-stars {
+    display: block;
+  }
+
+  .page-footer__logo-image-star {
+    display: block;
+    fill: #d22856;
   }
 
   .page-footer__copyright {

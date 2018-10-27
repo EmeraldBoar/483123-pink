@@ -5,10 +5,16 @@ body {
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+  overflow-x: hidden;
 }
 
 html {
   box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
 }
 
 *,
