@@ -3,15 +3,12 @@
   height: 470px;
   padding-top: 92px;
   background-color: #f2f2f2;
+  overflow-x: hidden;
 }
 
 .rates__table {
   display: flex;
   margin-bottom: 33px;
-}
-
-.rates__wrapper {
-  overflow-x: hidden;
 }
 
 .rates::before {
