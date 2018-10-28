@@ -216,7 +216,6 @@
 
   .advantages__list {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 0;
     padding-bottom: 69px;
@@ -235,8 +234,13 @@
     position: relative;
     width: 300px;
     margin-bottom: 0;
+    margin-right: 20px;
     padding: 0 30px;
     padding-top: 357px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .advantages__item--bg::before {
