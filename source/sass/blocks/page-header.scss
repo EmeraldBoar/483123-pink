@@ -1,5 +1,7 @@
 .page-header {
+  position: relative;
   overflow-x: hidden;
+  z-index: 1000;
 }
 
 @media (min-width: $desktop-width) {
