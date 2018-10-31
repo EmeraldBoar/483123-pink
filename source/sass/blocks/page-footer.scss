@@ -13,14 +13,14 @@
   margin-bottom: 34px;
 }
 
-.page-footer__logo__image {
+.page-footer__logo-image {
   width: 147px;
   height: 40px;
   fill: #283645;
 }
 
-.page-footer__logo-link[href]:hover .page-footer__logo__image,
-.page-footer__logo-link[href]:focus .page-footer__logo__image {
+.page-footer__logo-link[href]:hover .page-footer__logo-image,
+.page-footer__logo-link[href]:focus .page-footer__logo-image {
   fill: #d22856;
 }
 
@@ -129,18 +129,19 @@
   }
 
   .page-footer__item {
-    margin-right: 15px;
+    margin-right: 12px;
   }
 
   .page-footer__copyright {
     width: 150px;
-    padding-left: 28px;
+    padding-left: 20px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-footer {
     padding-top: 74px;
+    text-align: inherit;
   }
 
   .page-footer__wrapper {
@@ -165,7 +166,12 @@
     fill: #d22856;
   }
 
+  .page-footer__logo-link {
+    width: 160px;
+  }
+
   .page-footer__copyright {
+    width: 160px;
     padding-left: 4px;
   }
 }
