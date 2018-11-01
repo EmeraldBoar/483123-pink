@@ -143,6 +143,7 @@
 
 @media (min-width: $tablet-width) {
   .place__header {
+    padding-top: 64px;
     padding-bottom: 70px;
   }
 
@@ -255,7 +256,8 @@
 
 @media (min-width: $desktop-width) {
   .place__header {
-    padding-top: 56px;
+    padding-top: 61px;
+    padding-bottom: 66px;
   }
 
   .place__wrapper {
@@ -275,6 +277,7 @@
     width: auto;
     margin: 0;
     padding-top: 55px;
+    padding-bottom: 57px;
   }
 
   .place__item {
@@ -327,5 +330,6 @@
     width: 183px;
     margin-bottom: 0;
     margin-right: 44px;
+    padding: 15px 5px;
   }
 }
