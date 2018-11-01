@@ -207,13 +207,13 @@
     padding-top: 17px;
   }
 
-  .rates__header--hit::before {
+  .rates__header-hit {
     background-image: url("../img/bg-hit.svg");
   }
 
-  .rates__header--hit::after {
-    top: 11px;
-    left: 11px;
+  .rates__header-hit-text {
+    top: 12px;
+    left: 10px;
   }
 
   .rates__title {
