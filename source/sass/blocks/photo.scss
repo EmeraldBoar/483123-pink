@@ -127,7 +127,11 @@
 
   .photo__panorama-day {
     top: 58px;
-    right: 58px;
+    right: 20px;
+  }
+
+  .photo__panorama-image {
+    min-height: 509px;
   }
 
   .photo__image-link {
@@ -200,7 +204,7 @@
   }
 
   .photo__item {
-    margin-bottom: 50px;
+    margin-bottom: 51px;
 
     &:nth-last-child(3) {
       margin-bottom: 0;
@@ -212,12 +216,16 @@
     right: 131px;
   }
 
+  .photo__panorama-image {
+    min-height: 507px;
+  }
+
   .photo__wrapper {
     padding: 0;
   }
 
   .photo__comment {
-    min-height: 158px;
+    min-height: 154px;
   }
 
   .photo__comment--large {
